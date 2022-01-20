@@ -1,0 +1,114 @@
+#!/bin/bash
+
+echo  "\033[32m\e[40m
+
+____________________________________________________________________________________________________________________________
+_||||||||_||||__________||||___||||||___||||||||||||||||______||||||______||||___\033[30m\e[41m||__||\033[32m\e[40m\e[32m_____________________________________
+_||||||||_||||||________||||__||____||__||||||||||||||||_____||||||||_____||||_________\033[30m\e[41m||__||\033[32m\e[40m\e[32m_______________________________
+___||||___||||_||_______||||_||______||_______||||__________||||__||||____||||_______________\033[30m\e[41m||__||\033[32m\e[40m\e[32m_________________________
+___||||___||||___||_____||||_||_______________||||_________||||____||||___||||_____________________\033[30m\e[41m||__||\033[32m\e[40m\e[32m___________________
+___||||___||||____||____||||__|||||||_________||||________||||______||||__||||___________________________\033[30m\e[41m||__||\033[32m\e[40m\e[32m_____________
+___||||___||||______||__||||____||||||________||||_______||||||||||||||||_||||_________________________________\033[30m\e[41m||__||\033[32m\e[40m\e[32m_______
+___||||___||||_______||_||||_________||_______||||_______||||||||||||||||_||||___________________________\033[30m\e[41m||__||\033[32m\e[40m\e[32m_____________
+___||||___||||_________|||||_||______||_______||||_______||||________||||_||||_____________________\033[30m\e[41m||__||\033[32m\e[40m\e[32m___________________
+_||||||||_||||__________||||__||____||________||||_______||||________||||_||||||||||||_______\033[30m\e[41m||__||\033[32m\e[40m\e[32m_________________________
+_||||||||_||||__________||||___||||||_________||||_______||||________||||_||||||||||||_\033[30m\e[41m||__||\033[32m\e[40m\e[32m_______________________________
+"
+
+echo "  Перед установкой Pale Moon нужно удалить старую версию браузера.  "
+echo "                                                                        "
+echo  " выберите вариант и нажмите >> Enter "
+echo "                                                                        "
+echo " Удалить Pale Moon  ::> 1"
+echo " Установить Pale Moon GTK2 ::> 2"
+echo " Установить Pale Moon GTK3 ::> 3"
+echo "                                                                        "
+echo " Выйти из установки ::> 0"
+
+read doing 
+case $doing in
+0)
+	exit 0  ;;
+1)
+	echo "Удаление Pale Moon ... "
+	cd ~
+	rm -rf ~/.local/share/applications/palemoon
+	rm ~/.local/share/icons/mozicon128.png
+	rm ~/.local/share/applications/palemoon.desktop
+	rm -rf '.moonchild productions'
+	echo 'Браузер Pale Moon удалён.'
+	sleep 2s ;;
+2)
+	cd ~
+	wget -r -A.linux-x86_64-gtk2.tar.xz https://linux.palemoon.org/download/mainline/palemoon-
+	cd linux.palemoon.org/datastore/release/
+
+	tar xvf palemoon-*
+	wget https://prostolinux.my1.ru/moon.tar.xz	
+	tar xvf moon.tar.xz
+
+	cp -R palemoon/browser/icons 		~/.local/share/
+
+	touch palemoon.desktop 
+
+	echo "[Desktop Entry]" >> palemoon.desktop 
+	echo "Version=1.0" >> palemoon.desktop 
+	echo "Type=Application" >> palemoon.desktop 
+	echo "Name=Pale Moon" >> palemoon.desktop 
+	echo "Comment=Доступ в Интернет" >> palemoon.desktop 
+	echo "Exec=/home/userbuild/.local/share/applications/palemoon/palemoon %u" >> palemoon.desktop 
+	echo "Icon=mozicon128" >> palemoon.desktop 
+	echo "Path=" >> palemoon.desktop 
+	echo "Terminal=false" >> palemoon.desktop 
+	echo "StartupNotify=false" >> palemoon.desktop 
+	echo "Categories=Network; WebBrowser;" >> palemoon.desktop 
+
+	chmod +x  palemoon.desktop 
+
+	cp -r palemoon.desktop ~/.local/share/applications/
+	cp  -r '.moonchild productions' ~/
+	cp -R palemoon ~/.local/share/applications/
+
+	cd ~
+	rm  -rf  linux.palemoon.org
+
+	echo 'Браузер Pale Moon установлен.'
+	sleep 2s ;;
+
+3)
+	cd ~
+	wget -r -A.linux-x86_64-gtk3.tar.xz https://linux.palemoon.org/download/mainline/palemoon-
+	cd linux.palemoon.org/datastore/release/
+
+	tar xvf palemoon-*
+	wget https://prostolinux.my1.ru/moon.tar.xz	
+	tar xvf moon.tar.xz
+
+	cp -R palemoon/browser/icons 		~/.local/share/
+
+	touch palemoon.desktop 
+
+	echo "[Desktop Entry]" >> palemoon.desktop 
+	echo "Version=1.0" >> palemoon.desktop 
+	echo "Type=Application" >> palemoon.desktop 
+	echo "Name=Pale Moon" >> palemoon.desktop 
+	echo "Comment=Доступ в Интернет" >> palemoon.desktop 
+	echo "Exec=/home/userbuild/.local/share/applications/palemoon/palemoon %u" >> palemoon.desktop 
+	echo "Icon=mozicon128" >> palemoon.desktop 
+	echo "Path=" >> palemoon.desktop 
+	echo "Terminal=false" >> palemoon.desktop 
+	echo "StartupNotify=false" >> palemoon.desktop 
+	echo "Categories=Network; WebBrowser;" >> palemoon.desktop 
+
+	chmod +x  palemoon.desktop 
+
+	cp -r palemoon.desktop ~/.local/share/applications/
+	cp  -r '.moonchild productions' ~/
+	cp -R palemoon ~/.local/share/applications/
+
+	cd ~
+	rm  -rf  linux.palemoon.org
+
+	echo 'Браузер Pale Moon установлен.'
+	sleep 2s ;;
+esac 

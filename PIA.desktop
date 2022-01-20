@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Pale Moon
+Comment=Доступ в Интернет
+Exec=sh -c "$(dirname "%k")/PIA-manager "%F""
+Icon=applications-multimedia
+Terminal=true
+StartupNotify=true
+
