@@ -4,6 +4,7 @@ Alternatives to the Pale moon > > PIA, the manager of the Pale Moon web browser 
 Как запустить программу установки PIA-manager ?
 
 chmod +x PIA-manager 
+chmod +x Pale Moon 
 двойным кликом по Pale Moon
 
 или 
