@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!-- This Source Code is subject to the terms of the Mozilla Public License
+   - version 2.0 (the "License"). You can obtain a copy of the License at
+   - http://mozilla.org/MPL/2.0/. -->
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest"
+               em:id="ru-RU@dictionaries.thereisonlyxul.org"
+               em:version="1.0.0"
+               em:name="Russian"
+               em:license="LGPL-3.0"
+               em:type="64"
+               em:unpack="true">
+    <em:targetApplication name="Unified XUL Platform">
+      <Description em:id="toolkit@mozilla.org"
+                   em:minVersion="4.1.0a1"
+                   em:maxVersion="4.*"/>
+    </em:targetApplication>
+  </Description>
+
+</RDF>

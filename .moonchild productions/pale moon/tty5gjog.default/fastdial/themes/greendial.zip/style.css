@@ -1,0 +1,60 @@
+/**
+* @title greendial
+*/
+body {
+  background-image: none;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: auto;
+  font-family: 'Tahoma';
+  font-size: 11px;
+  background-color: #cbdbcd;
+}
+.back {
+  background-image: url(back.png);
+}
+.search-input {
+  font-family: 'Tahoma';
+  font-size: 13px;
+  color: #000000;
+  background-color: #f5f7fb;
+  border: 1px solid #92b4de;
+}
+table.suggestion {
+  font-family: 'Tahoma';
+  font-size: 13px;
+}
+.thumbnail {
+  background-color: transparent;
+  border: 1px solid #92b4de;
+  margin: 12px;
+  opacity: 1;
+  border-radius: 20px;
+  box-shadow: none;
+}
+div.box:hover .thumbnail, .hover .thumbnail {
+  background-color: transparent;
+  border: 1px solid #a9a9a9;
+  margin: 11px;
+  opacity: 1;
+  border-radius: 20px;
+  box-shadow: none;
+}
+.title {
+  color: #000000;
+  visibility: inherit;
+  background-color: #92b4de;
+  border-top: 1px solid #92b4de;
+}
+div.box:hover .title, .hover .title {
+  color: #000000;
+  visibility: inherit;
+  background-color: #92b4de;
+  border-top: 1px solid #92b4de;
+}
+.title img {
+  display: inline;
+}
+div.box:hover .title img, .hover .title img {
+  display: inline;
+}

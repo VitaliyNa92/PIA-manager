@@ -1,0 +1,60 @@
+/**
+* @title walnutdial
+*/
+body {
+  background-image: url(walnut.png);
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: auto;
+  font-family: 'Tahoma';
+  font-size: 11px;
+  background-color: transparent;
+}
+.back {
+  background-image: none;
+}
+.search-input {
+  font-family: 'Tahoma';
+  font-size: 11px;
+  color: #663300;
+  background-color: #f6e7ce;
+  border: 1px solid transparent;
+}
+table.suggestion {
+  font-family: 'Tahoma';
+  font-size: 11px;
+}
+.thumbnail {
+  background-color: #000000;
+  border: 1px solid #000000;
+  margin: 10px;
+  opacity: 0.9;
+  border-radius: 20px;
+  box-shadow: none;
+}
+div.box:hover .thumbnail, .hover .thumbnail {
+  background-color: #000000;
+  border: 1px solid #000000;
+  margin: 10px;
+  opacity: 0.9;
+  border-radius: 20px;
+  box-shadow: none;
+}
+.title {
+  color: #ffffff;
+  visibility: inherit;
+  background-color: #333300;
+  border-top: 1px solid #ffffff;
+}
+div.box:hover .title, .hover .title {
+  color: #ffffff;
+  visibility: inherit;
+  background-color: #333300;
+  border-top: 1px solid #ffffff;
+}
+.title img {
+  display: inline;
+}
+div.box:hover .title img, .hover .title img {
+  display: inline;
+}

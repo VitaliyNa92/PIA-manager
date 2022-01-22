@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this file,
+You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
+<!DOCTYPE vbox SYSTEM "chrome://quickdial-tool/locale/quickdialtool.dtd">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <setting pref="extensions.fastdial.enable" type="bool" title="&qtsd.showFastDial;"/>
+  <setting pref="browser.newtabpage.enabled" type="radio" title="&newtabPage.quickdial.label;">
+	<radiogroup orient="horizontal">
+      <radio value="true" label="&newtabPage.grid;"/>
+      <radio value="false" label="&newtabPage.blank.label;"/>
+   </radiogroup>
+  </setting>
+ 
+</vbox>

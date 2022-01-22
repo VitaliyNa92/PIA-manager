@@ -1,0 +1,12 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>Pale Moon Add-ons</os:ShortName>
+<os:Description>Searches addons.palemoon.org with Google</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:text/html;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8%2F9hAAABVElEQVR42n1TLVKEMQxNzQoUR6hagVoMOmoFNwDVo%2BQgiAoGboBAVWNYhUD1CKsQa0rSJv3%2BOpvZnenX9r285KUOBhFTKjm3tfcAu5tDXT8%2F3Lr13cUGxVRSUiACHO8OFfT2dS4Gnq8XBIGogb18IQQm2CsBXIl6GDkzZ9fU8sOuwGJNZEpck0vFDrwgZyWMCAR8%2BTuxSnRO6o6RqmwBSXZr3l4Jnu4B3r%2BX0n9%2FTvXcYaCSuXiP2ElAHZAtc8BCMsvehQmkaIeIJYNmZrT30%2BXj41jB58cJsva7EWTo4N4DJRqVsSCo9okDah8iztyYCOa11wq1TBfjK1v40h0wBZWOGXZXCCTXzMbU%2BsC7fuXCOioJE0TCNgcUia1MixKsgUMwTGO%2BGmVW4UmbuVUgFsq4yxkFrNjtY6oNVTu1kb1nWrdMoGGGD0XeRjKUksg%2FBNzc%2FweQDaMraxvPBwAAAABJRU5ErkJggg%3D%3D</os:Image>
+<SearchForm>https://addons.palemoon.org/extensions/</SearchForm>
+<os:Url type="text/html" method="GET" template="https://www.google.com/search" resultDomain="google.com">
+  <os:Param name="q" value="{searchTerms}+site:addons.palemoon.org"/>
+  <os:Param name="ie" value="utf-8"/>
+  <os:Param name="oe" value="utf-8"/>
+</os:Url>
+</SearchPlugin>
