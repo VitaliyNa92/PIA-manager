@@ -56,7 +56,7 @@ case $doing in
 	echo "Type=Application" >> palemoon.desktop 
 	echo "Name=Pale Moon" >> palemoon.desktop 
 	echo "Comment=Доступ в Интернет" >> palemoon.desktop 
-	echo "Exec=/home/userbuild/.local/share/applications/palemoon/palemoon %u" >> palemoon.desktop 
+	echo "Exec="$HOME"/.local/share/applications/palemoon/palemoon %u" >> palemoon.desktop 
 	echo "Icon=mozicon128" >> palemoon.desktop 
 	echo "Path=" >> palemoon.desktop 
 	echo "Terminal=false" >> palemoon.desktop 
@@ -96,7 +96,7 @@ case $doing in
 	echo "Type=Application" >> palemoon.desktop 
 	echo "Name=Pale Moon" >> palemoon.desktop 
 	echo "Comment=Доступ в Интернет" >> palemoon.desktop 
-	echo "Exec=/home/userbuild/.local/share/applications/palemoon/palemoon %u" >> palemoon.desktop 
+	echo "Exec="$HOME"/.local/share/applications/palemoon/palemoon %u" >> palemoon.desktop 
 	echo "Icon=mozicon128" >> palemoon.desktop 
 	echo "Path=" >> palemoon.desktop 
 	echo "Terminal=false" >> palemoon.desktop 
