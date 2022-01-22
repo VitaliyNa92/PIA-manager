@@ -24,7 +24,8 @@ echo " Установить Pale Moon GTK2 ::> 2"
 echo " Установить Pale Moon GTK3 ::> 3"
 echo "                                                                        "
 echo " Выйти из установки ::> 0"
-
+echo "                                                                        "
+echo -n " >>>  "
 read doing 
 case $doing in
 0)
