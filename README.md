@@ -10,7 +10,7 @@ Alternatives to the Pale moon > > PIA, the manager of the Pale Moon web browser 
 >>
 `chmod +x PIA-manager`
 `chmod +x Pale Moon` 
-двойным кликом по Pale Moon
+двойным кликом по PaleMoon.desktop
 
 или 
 
